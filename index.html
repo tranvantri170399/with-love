@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gửi Em Yêu 💖</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader"><div class="loader-heart">♥</div></div>
+
+  <!-- 3D cosmic background -->
+  <canvas id="bg-canvas"></canvas>
+  <div id="vignette"></div>
+
+  <!-- Journey progress -->
+  <div id="progress"><span id="progress-bar"></span></div>
+  <nav id="dots"></nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="stage" data-side="center" id="hero">
+      <div class="panel">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 class="hero-title">
+          <span id="hero-title"></span>
+          <span class="her-name" id="her-name"></span>
+        </h1>
+        <p class="hero-sub" id="hero-sub"></p>
+        <p class="scroll-hint" id="scroll-hint"></p>
+      </div>
+    </section>
+
+    <!-- Reasons -->
+    <section class="stage" data-side="left" id="reasons">
+      <div class="panel">
+        <h2 class="section-title reveal" id="reasons-title"></h2>
+        <p class="section-intro reveal" id="reasons-intro"></p>
+        <div class="cards" id="reason-cards"></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="stage" data-side="right" id="gallery">
+      <div class="panel">
+        <h2 class="section-title reveal" id="gallery-title"></h2>
+        <p class="section-intro reveal" id="gallery-intro"></p>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="stage" data-side="center" id="letter-section">
+      <div class="panel">
+        <h2 class="section-title reveal" id="letter-title"></h2>
+        <div class="envelope reveal" id="envelope">
+          <div class="env-pocket"></div>
+          <div class="env-flap"></div>
+          <div class="env-heart">♥</div>
+          <button class="open-btn" id="open-letter">Mở thư cho em 💌</button>
+        </div>
+        <div class="letter" id="letter-body"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Music toggle -->
+  <button id="music-btn" aria-label="Bật/tắt nhạc">♪</button>
+
+  <!-- Three.js (classic global build — works by double-clicking the file) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/starfield.js"></script>
+  <script src="js/nebula.js"></script>
+  <script src="js/planets.js"></script>
+  <script src="js/pathline.js"></script>
+  <script src="js/constellation.js"></script>
+  <script src="js/journey.js"></script>
+  <script src="js/heart.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/ambient.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
