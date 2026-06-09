@@ -53,10 +53,10 @@ const CONFIG = {
   // Bỏ ảnh thật vào thư mục assets/ rồi đổi src: "assets/ten-anh.jpg"
   // Để trống src ("") sẽ hiện khung placeholder đẹp.
   gallery: [
-    { src: "", caption: "Lần đầu gặp em ✨" },
-    { src: "", caption: "Chuyến đi đầu tiên 🌙" },
-    { src: "", caption: "Ngày mình bên nhau 💫" },
-    { src: "", caption: "Và mãi về sau... ♾️" },
+    { src: "assets/2.jpg", caption: "Lần đầu gặp em ✨" },
+    { src: "assets/3.jpg", caption: "Chuyến đi đầu tiên 🌙" },
+    { src: "assets/3.jpg", caption: "Ngày mình bên nhau 💫" },
+    { src: "assets/4.png", caption: "Và mãi về sau... ♾️" },
   ],
 
   // --- Lá thư tình ---
